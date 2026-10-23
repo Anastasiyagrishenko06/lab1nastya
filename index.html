@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Анастасия — UX/UI дизайнер</title>
+  <meta name="description" content="UX/UI дизайнер Анастасия: работы, отзывы, навыки и заказ дизайна.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <script>
+    (function () {
+      try {
+        if (localStorage.getItem('portfolio-theme') === 'dark') {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+      } catch (error) { /* localStorage недоступен */ }
+    })();
+  </script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-decor" aria-hidden="true">
+    <div class="circle circle--1"></div>
+    <div class="circle circle--2"></div>
+    <div class="circle circle--3"></div>
+  </div>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="#top">Анастасия</a>
+
+      <div class="header__actions">
+        <button class="theme-toggle" id="themeToggle" type="button"
+                aria-pressed="false" aria-label="Включить тёмную тему" title="Включить тёмную тему">
+          <span class="theme-toggle__text">Тёмная тема</span>
+        </button>
+
+        <button class="burger" id="burger" type="button"
+                aria-expanded="false" aria-controls="siteNav" aria-label="Открыть меню">
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+        </button>
+      </div>
+
+      <nav class="nav" id="siteNav" aria-label="Основная навигация">
+        <ul class="nav__list">
+          <li><a href="#about">О себе</a></li>
+          <li><a href="#experience">Опыт</a></li>
+          <li><a href="#skills">Навыки</a></li>
+          <li><a href="#projects">Работы</a></li>
+          <li><a href="#reviews">Отзывы</a></li>
+          <li><a href="#order">Заказать</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="container hero__container">
+        <div class="hero__image-placeholder">
+          <span class="hero__label">UX/UI Дизайнер</span>
+        </div>
+        <div class="hero__content">
+          <h1>Привет, я <br><span class="accent">Анастасия</span></h1>
+          <p class="hero__lead">
+            Работаю по UX/UI направлению: разбираюсь в задаче, собираю прототип,
+            продумываю сценарии и рисую аккуратный интерфейс в Figma. Делаю так,
+            чтобы экраном было удобно пользоваться.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#projects">Смотреть работы</a>
+            <a class="btn btn--outline" href="#order">Заказать дизайн</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="magazine-spread">
+          <div class="spread-left">
+            <h2 class="section__title">О себе</h2>
+            <p class="drop-cap">
+              Я Анастасия, работаю в UX/UI направлении. Начинаю с задачи и пользователя:
+              выясняю, что человеку нужно сделать на экране, какие у него ограничения,
+              и только потом рисую. Люблю понятные сценарии, аккуратную сетку
+              и интерфейсы без лишних элементов.
+            </p>
+            <p>
+              В работе использую Figma: собираю вайрфреймы, интерактивные прототипы,
+              компоненты и дизайн-систему, делаю адаптивные версии под телефон
+              и десктоп. Базово разбираюсь в HTML и CSS, поэтому макеты сразу
+              проектирую так, чтобы их было реально сверстать.
+            </p>
+          </div>
+          <div class="spread-right">
+            <div class="fact-block">
+              <span class="fact-block__label">Направление</span>
+              <span class="fact-block__value">UX/UI Дизайн</span>
+            </div>
+            <div class="fact-block">
+              <span class="fact-block__label">Инструменты</span>
+              <span class="fact-block__value">Figma, FigJam</span>
+            </div>
+            <div class="fact-block">
+              <span class="fact-block__label">Подход</span>
+              <span class="fact-block__value">Сначала задача, потом картинка</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--bg" id="skills">
+      <div class="container">
+        <h2 class="section__title">Навыки</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h3>UX</h3>
+            <ul class="chips">
+              <li class="chip">Исследования</li>
+              <li class="chip">Сценарии</li>
+              <li class="chip">Вайрфреймы</li>
+              <li class="chip">Прототипы</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <h3>UI</h3>
+            <ul class="chips">
+              <li class="chip">Сетка и типографика</li>
+              <li class="chip">Компоненты</li>
+              <li class="chip">Адаптивность</li>
+              <li class="chip">Дизайн-системы</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <h3>Инструменты</h3>
+            <ul class="chips">
+              <li class="chip">Figma</li>
+              <li class="chip">FigJam</li>
+              <li class="chip">HTML и CSS</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <h2 class="section__title">Избранные работы</h2>
+        
+        <div class="filters" role="group" aria-label="Фильтр работ по категории">
+          <button class="filter__btn is-active" type="button" data-filter="all" aria-pressed="true">Все</button>
+          <button class="filter__btn" type="button" data-filter="web" aria-pressed="false">Веб-дизайн</button>
+          <button class="filter__btn" type="button" data-filter="mobile" aria-pressed="false">Мобильные приложения</button>
+        </div>
+
+        <div class="projects">
+          <article class="project-card" data-category="web">
+            <div class="project-card__cover cover--1">
+              <span class="project-card__number">01</span>
+            </div>
+            <div class="project-card__body">
+              <p class="project-card__meta">Веб-дизайн · Концепт</p>
+              <h3 class="project-card__title">Редизайн лендинга онлайн-школы</h3>
+              <p class="project-card__text">
+                Перестроила структуру блоков, укрупнила заголовки, собрала карточки курсов. Задача — сделать первый экран понятнее.
+              </p>
+            </div>
+          </article>
+
+          <article class="project-card project-card--reverse" data-category="web">
+            <div class="project-card__cover cover--2">
+               <span class="project-card__number">02</span>
+            </div>
+            <div class="project-card__body">
+              <p class="project-card__meta">Веб-дизайн · Пет-проект</p>
+              <h3 class="project-card__title">Дизайн-система для SaaS-дашборда</h3>
+              <p class="project-card__text">
+                Собрала библиотеку компонентов: кнопки, поля, таблицы, фильтры. Настроила сетку и токены цвета.
+              </p>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="mobile">
+            <div class="project-card__cover cover--3">
+               <span class="project-card__number">03</span>
+            </div>
+            <div class="project-card__body">
+              <p class="project-card__meta">Мобильные приложения · Концепт</p>
+              <h3 class="project-card__title">Приложение для тренировок</h3>
+              <p class="project-card__text">
+                Спроектировала путь от выбора программы до отметки выполненной тренировки. Крупные элементы под большой палец.
+              </p>
+            </div>
+          </article>
+
+          <article class="project-card project-card--reverse" data-category="mobile">
+            <div class="project-card__cover cover--4">
+               <span class="project-card__number">04</span>
+            </div>
+            <div class="project-card__body">
+              <p class="project-card__meta">Мобильные приложения · Концепт</p>
+              <h3 class="project-card__title">Приложение доставки еды</h3>
+              <p class="project-card__text">
+                Упростила оформление заказа: короткий путь от меню до корзины, прозрачная стоимость доставки.
+              </p>
+            </div>
+          </article>
+        </div>
+        <p class="projects__empty" id="projectsEmpty" hidden>В этой категории пока нет работ.</p>
+      </div>
+    </section>
+
+    <section class="section section--dark" id="reviews">
+      <div class="container">
+        <h2 class="section__title">Отзывы</h2>
+        <div class="reviews-grid">
+          <article class="review">
+            <p class="review__quote">Анастасия начала не с картинок, а с вопросов о задаче. В итоге мы получили понятную структуру лендинга.</p>
+            <footer class="review__author">
+              <span class="review__name">Мария</span>
+              <span class="review__role">Онлайн-школа</span>
+            </footer>
+          </article>
+          <article class="review">
+            <p class="review__quote">Понравилось, что макет сразу был с компонентами и состояниями кнопок. Вёрстка пошла быстро.</p>
+            <footer class="review__author">
+              <span class="review__name">Илья</span>
+              <span class="review__role">Продукт, SaaS</span>
+            </footer>
+          </article>
+        </div>
+        <p class="section__note">Отзывы демонстрационные — на живом сайте замените их на реальные.</p>
+      </div>
+    </section>
+
+    <section class="section" id="order">
+      <div class="container">
+        <h2 class="section__title">Заказать у Анастасии</h2>
+        <div class="order-layout">
+          
+          <div class="order-info">
+            <div class="order-steps">
+              <h3>Как проходит заказ</h3>
+              <ol>
+                <li>Вы пишете мне и коротко описываете задачу.</li>
+                <li>Созваниваемся, уточняю детали и структуру.</li>
+                <li>Показываю прототип, согласуем логику экранов.</li>
+                <li>Отрисовываю дизайн и передаю макет в Figma.</li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="order-form-wrapper">
+            <h3>Оставить заявку</h3>
+            <form id="orderForm" class="order-form">
+              <div class="form-group">
+                <label for="clientName">Ваше имя</label>
+                <input type="text" id="clientName" name="name" required placeholder="Как к вам обращаться?">
+              </div>
+              <div class="form-group">
+                <label for="clientPhone">Телефон</label>
+                <input type="tel" id="clientPhone" name="phone" required placeholder="+7 (___) ___-__-__">
+              </div>
+              <div class="form-group">
+                <label for="taskDesc">Описание задания</label>
+                <textarea id="taskDesc" name="description" rows="4" required placeholder="Расскажите о задаче, сроках и пожеланиях..."></textarea>
+              </div>
+              <button type="submit" class="btn btn--primary">Отправить заявку</button>
+              <p id="formStatus" class="form-status" hidden></p>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__col">
+        <p class="footer__title">Почта</p>
+        <a href="mailto:anastasiyagrishenko6@gmail.com" class="footer__email">anastasiyagrishenko6@gmail.com</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
